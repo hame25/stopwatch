@@ -1,6 +1,8 @@
+var EventTarget = require('../../utility/EventTarget')
+
 
 function TimeView (model) {
-	AlexsApp.EventTarget.call(this);
+	EventTarget.call(this);
 	this.model = model;
 	this.startBtn = $('#start');
 	this.stopBtn = $('#stop');
@@ -11,7 +13,7 @@ function TimeView (model) {
 	this.render();
 }
 
-TimeView.prototype = new AlexsApp.EventTarget();
+TimeView.prototype = new EventTarget();
 
 TimeView.prototype.bindEvents = function () {
 	this.startBtn.on('click', this.startBtnClick.bind(this));
@@ -46,3 +48,5 @@ TimeView.prototype.formatDigits = function (value) {
 
 	return value;
 }
+
+module.exports = TimeView;

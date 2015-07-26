@@ -50,4 +50,6 @@ EventTarget.prototype = {
     }
 };
 
-AlexsApp.EventTarget = EventTarget
+module.exports = EventTarget;
+
+//AlexsApp.EventTarget = EventTarget

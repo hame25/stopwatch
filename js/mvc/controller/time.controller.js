@@ -1,3 +1,5 @@
+var TimeModel = require('../model/time.model');
+var TimeView = require('../view/time.view');
 
 TimeController = function () {
 
@@ -38,3 +40,5 @@ TimeController.prototype.updateTime = function() {
 	this.model.incrementSeconds(1);
 	console.log(this.model.get('seconds'));
 };
+
+module.exports = TimeController;

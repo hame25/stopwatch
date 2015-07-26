@@ -1,3 +1,5 @@
+var MyModel = require('./model');
+
 
 function TimeModel (attrs) {
 	MyModel.call(this, attrs);
@@ -19,5 +21,6 @@ TimeModel.prototype.incrementSeconds = function (increment) {
 		this.set('seconds', 0);
 		this.set('minutes', parseInt(this.get('minutes') + 1));
 	}
-
 }
+
+module.exports = TimeModel;

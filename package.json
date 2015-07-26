@@ -1,0 +1,13 @@
+{
+  "name": "stopwatch",
+  "version": "1.0.0",
+  "description": "Playground area for stopwatches",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hame25/stopwatch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.3.1"
+  }
+}
