@@ -17,6 +17,8 @@ Could go further and replace JQuery and make more browser compatible but run out
 ## Getting up and running
 1. Install node
 2. ```npm install```
-3. Run ```webpack``` to create bundle
+3. Run ```gulp``` to create bundle
+4. Run ```node app```
+5. Visit ```localhost:1999``` for basic ```localhost:1999/mvc``` for MVC version
 
 
