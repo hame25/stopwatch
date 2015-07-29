@@ -23,4 +23,17 @@ TimeModel.prototype.incrementSeconds = function (increment) {
 	}
 }
 
+TimeModel.prototype.validate = function (attr, value) {
+
+	switch (attr) {
+    case 'seconds':
+     	return this.validateSeconds(value);
+     }
+}
+
+TimeModel.prototype.validateSeconds = function (value) {
+	console.log('Seconds validate');
+	return value;
+}
+
 module.exports = TimeModel;
